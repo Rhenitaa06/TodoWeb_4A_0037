@@ -16,42 +16,57 @@ btntambah.addEventListener("click", function() {
     let spanbaru    = document.createElement("span");
     let spanTanggal = document.createElement("span");
     let btnProgress = document.createElement("button");
-    let btnDone = document.createElement("button");
-    let btnHapus = document.createElement("button"); 
-   
+    let btnDone     = document.createElement("button");
+    let btnHapus    = document.createElement("button");
+    let btnEdit     = document.createElement("button");
 
     spanbaru.innerHTML    = teksTugas;
-    spanTanggal.innerHTML = tanggal ? " : " + tanggal : "";
+    spanTanggal.innerHTML = tanggal ? ": " + tanggal : "";
 
-    btnHapus.innerHTML = "Hapus"; 
+    // Tombol Edit
+    btnEdit.innerHTML = "✏️ Edit";
+    btnEdit.classList.add("btn-edit");
+    btnEdit.addEventListener("click", function() {
+        let teksLama    = spanbaru.innerHTML;
+        let tanggalLama = spanTanggal.innerHTML.replace(": ", "");
+
+        let inputEdit    = document.createElement("input");
+        let inputTglEdit = document.createElement("input");
+        let btnSimpan    = document.createElement("button");
+        
+    }); 
+
+    // Tombol Hapus
+    btnHapus.innerHTML = "Hapus";
     btnHapus.classList.add("hapus");
     btnHapus.addEventListener("click", function() {
-        let konfir = confirm("Yakin ingin menghapus tugas ini?");
-        if (konfir) {
+        if (confirm("Yakin ingin menghapus tugas ini?")) {
             listbaru.remove();
         }
     });
 
-    btnProgress.innerHTML = " Progress";
+    // Tombol Progress
+    btnProgress.innerHTML = "Progress";
     btnProgress.classList.add("btn-progress");
     btnProgress.addEventListener("click", function() {
         listbaru.className = "status-Progress";
     });
 
-    btnDone.innerHTML = " Done";
+    // Tombol Done
+    btnDone.innerHTML = "✅ Done";
     btnDone.classList.add("btn-done");
     btnDone.addEventListener("click", function() {
         listbaru.className = "status-Done";
-    })
+    });
 
     listbaru.appendChild(spanbaru);
     listbaru.appendChild(spanTanggal);
     listbaru.appendChild(btnProgress);
     listbaru.appendChild(btnDone);
+    listbaru.appendChild(btnEdit);
     listbaru.appendChild(btnHapus);
     daftarTugas.appendChild(listbaru);
 
-
-    inputTugas.value   = ""; 
-    inputTanggal.value = ""; 
-});
+    inputTugas.value   = "";
+    inputTanggal.value = "";
+}); 
