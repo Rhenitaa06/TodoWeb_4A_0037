@@ -30,7 +30,7 @@ button {
 }
 
 button:hover{
-    background: #4338ca;
+    background: #26206a;
 }
 
 li {
@@ -70,7 +70,9 @@ li {
     color: #0b7132;
 }
 
-
+.btn-edit {
+    background: #4338ca;
+}
 
 
 
