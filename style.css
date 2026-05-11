@@ -46,4 +46,12 @@ li {
     background: #dc2626;
 }
 
+.edit {
+    background: #3b82f6;
+}
+
+.edit:hover {
+    background: #2563eb;
+}
+
 
