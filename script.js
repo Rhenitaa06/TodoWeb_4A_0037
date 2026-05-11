@@ -50,6 +50,19 @@ btntambah.addEventListener("click", function() {
         listbaru.insertBefore(inputTglEdit, btnProgress);
         listbaru.insertBefore(btnSimpan, btnProgress);
 
+        btnSimpan.addEventListener("click", function() {
+            spanbaru.innerHTML    = inputEdit.value;
+            spanTanggal.innerHTML = inputTglEdit.value ? ": " + inputTglEdit.value : "";
+
+            spanbaru.style.display    = "";
+            spanTanggal.style.display = "";
+            btnEdit.style.display     = "";
+
+            inputEdit.remove();
+            inputTglEdit.remove();
+            btnSimpan.remove();
+        });
+
     }); 
 
     // Tombol Hapus
