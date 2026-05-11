@@ -19,7 +19,7 @@ input{
 button {
     padding: 10px 14px;
     border: none;
-    background: #4f46e5;
+    background: #4338ca;
     color: white;
     border-radius: 6px;
     cursor: pointer;
@@ -38,12 +38,20 @@ li {
     justify-content: space-between;
 }
 
-.hapus {
-    background: #ef4444;
+#btnHapus {
+    background: #ef4444;  
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-.hapus:hover {
-    background: #dc2626;
+#btnHapus:hover {
+    background: #dc2626;  
 }
+
+
 
 
