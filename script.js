@@ -66,8 +66,8 @@ btntambah.addEventListener("click", function() {
     }); 
 
     // Tombol Hapus
-    btnHapus.innerHTML = "Hapus";
-    btnHapus.classList.add("hapus");
+    btnHapus.innerHTML = "🗑️ Hapus";
+    btnHapus.classList.add("btn-hapus");
     btnHapus.addEventListener("click", function() {
         if (confirm("Yakin ingin menghapus tugas ini?")) {
             listbaru.remove();
@@ -75,7 +75,7 @@ btntambah.addEventListener("click", function() {
     });
 
     // Tombol Progress
-    btnProgress.innerHTML = "Progress";
+    btnProgress.innerHTML = "📖 Progress";
     btnProgress.classList.add("btn-progress");
     btnProgress.addEventListener("click", function() {
         listbaru.className = "status-Progress";

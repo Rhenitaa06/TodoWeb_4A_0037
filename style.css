@@ -44,6 +44,8 @@ li {
 
 .btn-progress {
     background: #4338ca;
+    padding: 10px;
+    gap: 2px;
 }
 
 .btn-progress:hover {
@@ -58,6 +60,8 @@ li {
 
 .btn-done {
     background: #4338ca;
+    padding: 10px;
+    gap: 2px;
 }
 
 .btn-done:hover {
@@ -72,6 +76,8 @@ li {
 
 .btn-edit {
     background: #4338ca;
+    padding: 10px;
+    gap: 2px;
 }
 
 .btn-edit:hover {
@@ -80,6 +86,8 @@ li {
 
 .btn-hapus {
     background: #4338ca;
+    padding: 10px;
+    gap: 2px;
 }
 
 .btn-hapus:hover {
@@ -87,5 +95,7 @@ li {
 }
 
 .btn-simpan {
-    background: #191263;
+    background: #4338ca;
+    padding: 10px;
+    gap: 2px;
 }
