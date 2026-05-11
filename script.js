@@ -34,6 +34,22 @@ btntambah.addEventListener("click", function() {
         let inputTglEdit = document.createElement("input");
         let btnSimpan    = document.createElement("button");
         
+        inputEdit.type     = "text";
+        inputEdit.value    = teksLama;
+        inputTglEdit.type  = "date";
+        inputTglEdit.value = tanggalLama;
+
+        btnSimpan.innerHTML = "💾 Simpan";
+        btnSimpan.classList.add("btn-simpan");
+
+        spanbaru.style.display    = "none";
+        spanTanggal.style.display = "none";
+        btnEdit.style.display     = "none";
+
+        listbaru.insertBefore(inputEdit, btnProgress);
+        listbaru.insertBefore(inputTglEdit, btnProgress);
+        listbaru.insertBefore(btnSimpan, btnProgress);
+
     }); 
 
     // Tombol Hapus
