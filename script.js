@@ -16,6 +16,7 @@ btntambah.addEventListener("click", function() {
     let spanbaru    = document.createElement("span");
     let spanTanggal = document.createElement("span");
     let btnHapus = document.createElement("button"); 
+    let btnProgress = document.createElement("button");
 
     spanbaru.innerHTML    = teksTugas;
     spanTanggal.innerHTML = tanggal ? " : " + tanggal : "";
@@ -29,11 +30,15 @@ btntambah.addEventListener("click", function() {
         }
     });
 
-    let divInfo = document.createElement("div");
-    divInfo.appendChild(spanbaru);
-    divInfo.appendChild(spanTanggal);
+    btnProgress.innerHTML = " Progress";
+    btnProgress.classList.add("btn-progress");
+    btnProgress.addEventListener("click", function() {
 
-    listbaru.appendChild(divInfo);
+    });
+
+    listbaru.appendChild(spanbaru);
+    listbaru.appendChild(spanTanggal);
+    listbaru.appendChild(btnProgress);
     listbaru.appendChild(btnHapus);
     daftarTugas.appendChild(listbaru);
 
