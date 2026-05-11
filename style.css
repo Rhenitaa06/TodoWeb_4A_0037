@@ -38,19 +38,13 @@ li {
     justify-content: space-between;
 }
 
-#btnHapus {
-    background: #ef4444;  
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-left: 10px;
+.status-Progress {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    color: #b45309;
 }
 
-#btnHapus:hover {
-    background: #dc2626;  
-}
+
 
 
 
