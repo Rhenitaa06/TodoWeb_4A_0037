@@ -74,5 +74,9 @@ li {
     background: #4338ca;
 }
 
+.btn-edit:hover {
+    background: #b67ac0;
+}
+
 
 
