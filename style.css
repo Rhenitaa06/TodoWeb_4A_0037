@@ -78,5 +78,12 @@ li {
     background: #b67ac0;
 }
 
+.btn-hapus {
+    background: #4338ca;
+}
+
+.btn-hapus:hover {
+    background: #b91010;
+}
 
 
