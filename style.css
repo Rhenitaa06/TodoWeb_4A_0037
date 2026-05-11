@@ -44,7 +44,11 @@ li {
     color: #b45309;
 }
 
-
+.status-Done {
+    background: #d1fae5;
+    border-left: 4px solid #10b981;
+    color: #94a3b8;
+}
 
 
 
